@@ -1,0 +1,14 @@
+<h2>Personal Details</h2>
+<style>
+    {% comment %} body{
+        background-image: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i4i6YwF2uWUI/v0/1200x-1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        background-color: transparent;
+      } {% endcomment %}
+</style>
+<form method="POST" class="post-form">{% csrf_token%}
+    {{form.as_p}}
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>

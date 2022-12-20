@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkiraChix</title>
+</head>
+<style>
+    body{
+        background-image: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i4i6YwF2uWUI/v0/1200x-1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        background-color: transparent;
+      }
+    #logo{
+        width:15%;
+        margin-top:-2%;
+        mix-blend-mode: multiply;
+    }
+    #flaire{
+        font-size:70%;
+        margin-left:9%;
+        margin-top:-7.8%;
+        color:#FFFFFF;
+    }
+    #health{
+        font-size:70%;
+        margin-left:15%;
+        margin-top:-3%;
+        color:#53CEC6;
+    }   
+    #title{
+        font-size:140%;
+        margin-left:6%;
+        margin-top:6%;
+        color:#00000;
+        
+    }  
+    #name3 p{
+    font-size:95%;  
+    }
+    .button {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left:6%;
+      }
+      .button:hover {
+        background-color:#29384C;
+        color: black;
+        box-shadow: 0 8px 16px 0 white;
+        
+      }
+      #name4{
+        margin-left:50%;
+        margin-top:-3.5%;
+        cursor: pointer;
+        text-decoration: none;
+        color:black;
+      }
+      #name5{
+        margin-left:58%;
+        margin-top:-3%;
+        cursor: pointer;
+      }
+      #name6{
+        margin-left:67%;
+        margin-top:-3%;
+        cursor: pointer;
+      }
+      #name7{
+        margin-left:75%;
+        margin-top:-3%;
+        cursor: pointer;
+      }
+      nav{
+        list-style: none;
+        text-decoration: none;
+    }
+      .navbar{
+        margin-top: -3%;
+        margin-right: 8%;
+        font-size:120%;
+        cursor: pointer;
+        margin-left: 58%;
+       
+    }
+    .navbar a{
+      padding: 9px;
+      text-decoration: none;
+      color:black;
+    }
+    .navbar a:hover{
+      background-color: #53CEC6;
+  }
+    
+</style>
+<body>
+ 
+<div>
+    <img id="logo" src="https://thumbs.dreamstime.com/b/hospital-logo-template-hospital-logo-template-117487677.jpg">
+ </div>
+ 
+ <div id="flaire">
+     <h1>Flaire</h1>
+  </div>
+  <div id="health">
+     <h1>Health</h1>
+  </div>
+
+  <nav class="navbar">
+    <a href="{%url 'home'%}" >Home</a>
+   
+    <a href="{%url 'registration'%}" >Patient</a>
+    {% comment %} <a href="{%url 'appointments'%}" >Doctor</a>
+     {% endcomment %}
+    </nav>
+
+  <div id="title">
+    <h1>Healthcare Made Easy and  <br>Affordable. </br></h1>
+    <p>Flaire Healthcare makes your hospital <br>experience easy and affordable.It allows you <br>to book appointments online and provides virtual<br>healthcare experiences </br> </p>
+ </div>
+  <a href ="{% url 'appointment'%}"> 
+  <button class="button">Book Appointpoinment</button>
+         
+</body>
+</html>
